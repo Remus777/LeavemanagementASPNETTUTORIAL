@@ -43,6 +43,11 @@ namespace LeavemanagementASPNETTUTORIAL.Repository
             throw new NotImplementedException();
         }
 
+        public bool isExists(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Save()
         {
             var changes = _db.SaveChanges();
