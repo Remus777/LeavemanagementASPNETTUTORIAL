@@ -52,7 +52,7 @@ namespace LeavemanagementASPNETTUTORIAL.Data.Migrations
                     b.ToTable("LeaveAllocations");
                 });
 
-            modelBuilder.Entity("LeavemanagementASPNETTUTORIAL.Data.LeaveHistory", b =>
+            modelBuilder.Entity("LeavemanagementASPNETTUTORIAL.Data.LeaveRequest", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -91,7 +91,7 @@ namespace LeavemanagementASPNETTUTORIAL.Data.Migrations
 
                     b.HasIndex("RequestingEmployeeId");
 
-                    b.ToTable("LeaveHistories");
+                    b.ToTable("LeaveRequests");
                 });
 
             modelBuilder.Entity("LeavemanagementASPNETTUTORIAL.Data.LeaveType", b =>
@@ -379,7 +379,7 @@ namespace LeavemanagementASPNETTUTORIAL.Data.Migrations
                     b.Navigation("LeaveType");
                 });
 
-            modelBuilder.Entity("LeavemanagementASPNETTUTORIAL.Data.LeaveHistory", b =>
+            modelBuilder.Entity("LeavemanagementASPNETTUTORIAL.Data.LeaveRequest", b =>
                 {
                     b.HasOne("LeavemanagementASPNETTUTORIAL.Data.Employee", "ApprovedBy")
                         .WithMany()
